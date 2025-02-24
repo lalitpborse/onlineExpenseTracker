@@ -32,7 +32,7 @@ public class userRegister extends HttpServlet {
             stat.executeUpdate("INSERT INTO register (name, email, password, about) VALUES ('" + fullName + "', '"
                     + email + "','" + password + "','" + about + "')");
 
-            System.out.println("Registration successful");
+            System.out.println("Registration successfull");
 
             HttpSession session = request.getSession();
             session.setAttribute("msg", "Registration Successful!");
